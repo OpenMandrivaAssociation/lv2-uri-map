@@ -1,8 +1,9 @@
 %define extname uri-map
+%define debug_package %{nil}
 
 Name:           lv2-%{extname}
 Version:        1.4
-Release:        1
+Release:        2
 Summary:        LV2 %{extname} extension
 
 Source:         http://lv2plug.in/spec/%{name}-%{version}.tar.bz2
@@ -11,8 +12,7 @@ License:        ISC
 Group:          System/Libraries
 BuildRequires:  waf
 BuildRequires:  pkgconfig
-Requires:       lv2core-devel >= 0.4
-Buildarch:      noarch
+Requires:       lv2core
 
 %description
 This extension defines an interface that can be used in LV2 plugins and
@@ -22,6 +22,7 @@ hosts to create %{extname}s in plugins.
 Summary:    Development files for the LV2 %{extname} extension
 Group:      Development/C
 Requires:   %{name} = %{version}
+Requires:   lv2core-devel
 
 %description    devel
 This package contains development files for the LV2 %{extname} extension.
@@ -31,9 +32,9 @@ This package contains development files for the LV2 %{extname} extension.
 %defattr(-,root,root,-)
 %{_libdir}/lv2/%{extname}.lv2/manifest.ttl
 %{_libdir}/lv2/%{extname}.lv2/%{extname}.ttl
-%{_includedir}/lv2/lv2plug.in/ns/ext/%{extname}
 
 %files devel
+%{_includedir}/lv2/lv2plug.in/ns/ext/%{extname}
 %{_libdir}/lv2/%{extname}.lv2/%{extname}.h
 %{_libdir}/pkgconfig/lv2-lv2plug.in-ns-ext-%{extname}.pc
 
