@@ -53,3 +53,14 @@ rm -rf %{buildroot}
 
 %clean
 rm -rf %{buildroot}
+
+
+%changelog
+* Tue Apr 17 2012 Frank Kober <emuse@mandriva.org> 1.4-2
++ Revision: 791519
+- fixed build arch which is not noarch
+
+* Sun Feb 19 2012 Frank Kober <emuse@mandriva.org> 1.4-1
++ Revision: 777517
+- imported package lv2-uri-map
+
