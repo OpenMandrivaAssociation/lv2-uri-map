@@ -3,7 +3,7 @@
 
 Name:           lv2-%{extname}
 Version:        1.4
-Release:        2
+Release:        3
 Summary:        LV2 %{extname} extension
 
 Source:         http://lv2plug.in/spec/%{name}-%{version}.tar.bz2
