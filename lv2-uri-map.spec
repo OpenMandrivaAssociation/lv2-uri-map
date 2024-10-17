@@ -7,7 +7,7 @@ Release:        3
 Summary:        LV2 %{extname} extension
 
 Source:         http://lv2plug.in/spec/%{name}-%{version}.tar.bz2
-URL:            http://lv2plug.in/ns/extensions/%{extname}/
+URL:            https://lv2plug.in/ns/extensions/%{extname}/
 License:        ISC
 Group:          System/Libraries
 BuildRequires:  waf
